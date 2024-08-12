@@ -54,6 +54,22 @@ echo -e "\e[32mНастраиваем Fail2Ban...\e[0m"
 systemctl enable fail2ban
 systemctl start fail2ban
 
+echo "" # Пробел для разделения
+
+
+# Настройка порта SSH
+echo -e "\e[32mМеняем порт SSH на 2222, если необходимо...\e[0m"
+current_port=$(grep -E '^Port ' /etc/ssh/sshd_config | awk '{print $2}')
+if [ "$current_port" != "2222" ]; then
+    sed -i 's/^#Port 22/Port 2222/' /etc/ssh/sshd_config
+    sed -i 's/^Port 22/Port 2222/' /etc/ssh/sshd_config
+    echo -e "\e[32mПорт SSH изменен на 2222.\e[0m"
+    systemctl restart sshd
+else
+    echo -e "\e[32mПорт SSH уже установлен на 2222.\e[0m"
+fi
+
+
 
 echo "" # Пробел для разделения
 
