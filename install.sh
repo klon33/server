@@ -64,7 +64,7 @@ if [ "$current_port" != "2222" ]; then
     sed -i 's/^#Port 22/Port 2222/' /etc/ssh/sshd_config
     sed -i 's/^Port 22/Port 2222/' /etc/ssh/sshd_config
     echo -e "\e[32mПорт SSH изменен на 2222.\e[0m"
-    systemctl restart sshd
+    systemctl restart ssh
 else
     echo -e "\e[32mПорт SSH уже установлен на 2222.\e[0m"
 fi
