@@ -24,7 +24,9 @@ bash <(curl -L -s https://raw.githubusercontent.com/0xJacky/nginx-ui/master/inst
 # Установка webmin
 echo -e "\e[32mУстанавливаем webmin...\e[0m"
 curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.sh
-sudo sh setup-repos.sh
+sudo sh setup-repos.sh <<EOF
+y
+EOF
 
 # Очистка
 echo -e "\e[34mОчистка временных файлов...\e[0m"
