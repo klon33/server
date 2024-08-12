@@ -10,6 +10,10 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
+# Логирование
+LOG_FILE="/var/log/setup-script.log"
+exec > >(tee -a $LOG_FILE) 2>&1
+
 echo "" # Пробел для разделения
 
 # Обновление списка пакетов и обновление установленных пакетов
