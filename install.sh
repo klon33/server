@@ -48,7 +48,7 @@ yes | sudo sh setup-repos.sh
 echo "" # Пробел для разделения
 
 echo -e "\e[32mУстанавливаем дополнительные инструменты...\e[0m"
-apt-get install net-tools fail2ban mc -y
+apt-get install net-tools fail2ban mc python3 python3-pip -y
 
 echo "" # Пробел для разделения
 
