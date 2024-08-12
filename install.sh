@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Установка программ и первичная настройка ubuntu 24
-#установка vpn  и сеертификата: sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -uninstall yes"
+#установка vpn  и сертификата: sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -uninstall yes"
 
 
 # Проверка на root-права
