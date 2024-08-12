@@ -90,4 +90,7 @@ ip_address=$(hostname -I | awk '{print $1}')
 echo -e "\e[32mnginx-ui-panel: http://$ip_address:9000\e[0m"
 echo -e "\e[32mwebmin: http://$ip_address:10000\e[0m"
 
+echo "" # Пробел для разделения
+echo "" # Пробел для разделения
+
 
