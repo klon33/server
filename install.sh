@@ -45,6 +45,18 @@ yes | sudo sh setup-repos.sh
 
 echo "" # Пробел для разделения
 
+echo -e "\e[32mУстанавливаем дополнительные инструменты...\e[0m"
+apt-get install net-tools fail2ban mc -y
+
+echo "" # Пробел для разделения
+
+echo -e "\e[32mНастраиваем Fail2Ban...\e[0m"
+systemctl enable fail2ban
+systemctl start fail2ban
+
+
+echo "" # Пробел для разделения
+
 # Очистка
 echo -e "\e[34mОчистка временных файлов...\e[0m"
 rm -f setup-repos.sh
