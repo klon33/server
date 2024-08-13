@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Установка программ и первичная настройка ubuntu 24
-#установка vpn  и сертификата: sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -uninstall yes"
+#https://github.com/GFW4Fun/x-ui-pro
+#установка vpn  и сертификата: sudo su -c "sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -install yes -ONLY_CF_IP_ALLOW yes"
 
 
 # Проверка на root-права
