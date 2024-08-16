@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Установка программ и первичная настройка ubuntu 24
+# bash <(curl -Ls https://raw.githubusercontent.com/klon33/server/main/install.sh)
+
 #https://github.com/GFW4Fun/x-ui-pro
 #установка vpn  и сертификата: sudo su -c "sudo su -c "bash <(wget -qO- https://raw.githubusercontent.com/GFW4Fun/x-ui-pro/master/x-ui-pro.sh) -install yes -ONLY_CF_IP_ALLOW yes"
 #https://github.com/MHSanaei/3x-ui   bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
